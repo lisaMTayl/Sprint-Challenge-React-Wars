@@ -6,8 +6,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-
-
 export default function CharacterCard(props) {
   console.log(props);
   return (
@@ -25,9 +23,6 @@ export default function CharacterCard(props) {
         <Typography gutterBottom variant="h5" component="h2">{props.homeworld}</Typography>
         <Typography gutterBottom variant="h5" component="h2">{props.films}</Typography>
       </CardContent>
-
-
-
     </Card>
   );
 }
