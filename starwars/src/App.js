@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from 'axios';
 import CharacterCard from "./components/CharacterCard";
 import './App.css';
+import Container from '@material-ui/core/Container';
 
 export default function App() {
 
@@ -18,7 +19,7 @@ export default function App() {
   })
       .catch(error => {
         // data receipt failure
-        console.log(error, "Error receiving data");
+        console.log(error, "I'm broken!");
       });
   }, []);
 
@@ -31,7 +32,7 @@ export default function App() {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <Container className="App" maxWidth="md">
       <h1 className="Header">React Wars</h1>
 
 
@@ -41,7 +42,7 @@ export default function App() {
                   homeworld={data.homeworld}
                   films={data.films} />
       ))}
-    </div>
+    </Container>
   );
 }
 
