@@ -12,9 +12,9 @@ export default function App() {
       .get("https://swapi.co/api/people")
       .then(res => {
         // receive data
-        setCharacters(res.data);
+        setCharacters(res.data.results);
         // data receipt successful
-        console.log(res.data);
+        console.log(res.data.results);
 
   })
       .catch(error => {
