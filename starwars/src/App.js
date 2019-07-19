@@ -15,7 +15,6 @@ export default function App() {
         console.log(res.data);
         console.log(setData);
 
-
   })
       .catch(error => {
         // data receipt failure
