@@ -8,4 +8,8 @@
 out
 gen
 .gitignore
+<<<<<<< HEAD
 .idea/workspace.xml
+=======
+.idea/
+>>>>>>> remotes/origin/lisa-taylor
