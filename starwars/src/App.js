@@ -4,16 +4,16 @@ import CharacterCard from "./components/CharacterCard";
 import './App.css';
 
 export default function App() {
-  const [data, setData] = useState( []);
+
+  const [characters, setCharacters] = useState( []);
   useEffect(() => {
     axios
       .get("https://swapi.co/api/people")
       .then(res => {
         // receive data
-        setData(res.data);
+        setCharacters(res.data);
         // data receipt successful
         console.log(res.data);
-        console.log(setData);
 
   })
       .catch(error => {
@@ -33,13 +33,16 @@ export default function App() {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      {data
-        ? <CharacterCard name={data.name}
-                         species={data.species}
-                         homeworld={data.homeworld}
-                         films={data.films} />
-        : <div>Loading</div>}
+
+
+       {characters.map(data => (
+     <CharacterCard name={data.name}
+                 species={data.species}
+                  homeworld={data.homeworld}
+                  films={data.films} />
+      ))}
     </div>
   );
 }
+
 
