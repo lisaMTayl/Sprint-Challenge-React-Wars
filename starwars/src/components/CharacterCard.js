@@ -24,6 +24,7 @@ export default function CharacterCard(props) {
         <Typography gutterBottom variant="h5" component="h2">{props.films}</Typography>
       </CardContent>
     </Card>
+
   );
 }
 
