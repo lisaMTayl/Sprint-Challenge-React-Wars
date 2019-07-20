@@ -41,7 +41,7 @@ export default function CharacterCard(props) {
         </Typography>
 
         {/* Gender */}
-        <Typography variant="h5" component="h2">Species:
+        <Typography variant="h5" component="h2">Gender:
           <Link href={props.gender} className={classes.link}> Link</Link>
         </Typography>
 
@@ -67,4 +67,3 @@ export default function CharacterCard(props) {
 
   );
 }
-
