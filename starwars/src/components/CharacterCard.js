@@ -64,6 +64,7 @@ export default function CharacterCard(props) {
 
       </CardContent>
     </Card>
+
   );
 }
 
