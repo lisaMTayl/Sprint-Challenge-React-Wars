@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container';
 export default function App() {
 
   const [characters, setCharacters] = useState( []);
+
   useEffect(() => {
     axios
       .get("https://swapi.co/api/people")
@@ -37,10 +38,13 @@ export default function App() {
 
 
        {characters.map(data => (
+
      <CharacterCard name={data.name}
-                 species={data.species}
-                  homeworld={data.homeworld}
-                  films={data.films} />
+                    species={data.species}
+                    gender={data.gender}
+                    homeworld={data.homeworld}
+                    hairColor={data.hair_color}
+                    eyeColor={data.eye_color} />
       ))}
     </Container>
   );
