@@ -35,8 +35,7 @@ export default function App() {
   return (
     <Container className="App" maxWidth="md">
       <h1 className="Header">React Wars</h1>
-
-
+      
        {characters.map(data => (
 
      <CharacterCard name={data.name}
