@@ -41,8 +41,10 @@ export default function App() {
 
      <CharacterCard name={data.name}
                     species={data.species}
+                    gender={data.gender}
                     homeworld={data.homeworld}
-                    films={data.films} />
+                    hairColor={data.hair_color}
+                    eyeColor={data.eye_color} />
       ))}
     </Container>
   );

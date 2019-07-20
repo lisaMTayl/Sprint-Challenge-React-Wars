@@ -40,15 +40,27 @@ export default function CharacterCard(props) {
           <Link href={props.species} className={classes.link}> Link</Link>
         </Typography>
 
+        {/* Gender */}
+        <Typography variant="h5" component="h2">Species:
+          <Link href={props.gender} className={classes.link}> Link</Link>
+        </Typography>
+
+        {/* Hair Color */}
+        <Typography variant="h5" component="h2">Hair Color:
+          <Link href={props.hairColor} className={classes.link}> Link</Link>
+        </Typography>
+
+        {/* Eye Color */}
+        <Typography variant="h5" component="h2">Eye Color:
+          <Link href={props.eyeColor} className={classes.link}> Link</Link>
+        </Typography>
+
         {/* Homeworld */}
         <Typography variant="h5" component="h2">Homeworld:
           <Link href={props.homeworld} className={classes.link}> Link</Link>
         </Typography>
 
-        {/* Films */}
-        <Typography variant="h5" component="h2">Films:
-        <Link href={props.films} className={classes.link}> Link</Link>
-        </Typography>
+
 
       </CardContent>
     </Card>
